@@ -1,9 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[272],{7875:function(e,t,r){Promise.resolve().then(r.bind(r,4401))},4401:function(e,t,r){"use strict";r.r(t);var o=r(9268),n=r(6008),s=r(6006);t.default=()=>{let[e,t]=(0,s.useState)(""),r=(0,n.useRouter)(),a=async o=>{o.preventDefault();let n=localStorage.getItem("token");try{let o=await fetch("https://keep-your-anger-down-production.up.railway.app/ckeckdark/",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Token ".concat(n)},body:JSON.stringify({pass_dark:e})}),s=await o.json();console.log(s),o.ok&&r.push("/kyad_houd/"),t("")}catch(e){console.error(e)}};return(0,o.jsx)("div",{children:(0,o.jsxs)("form",{onSubmit:a,children:[(0,o.jsxs)("div",{children:[(0,o.jsx)("label",{htmlFor:"pass",children:"ASK ANYTHING:"}),(0,o.jsx)("input",{type:"text",id:"pass",value:e,onChange:e=>t(e.target.value)})]}),(0,o.jsx)("button",{type:"submit",children:"ASK"})]})})}},3177:function(e,t,r){"use strict";/**
- * @license React
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var o=r(6006),n=Symbol.for("react.element"),s=(Symbol.for("react.fragment"),Object.prototype.hasOwnProperty),a=o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,i={key:!0,ref:!0,__self:!0,__source:!0};function u(e,t,r){var o,u={},c=null,l=null;for(o in void 0!==r&&(c=""+r),void 0!==t.key&&(c=""+t.key),void 0!==t.ref&&(l=t.ref),t)s.call(t,o)&&!i.hasOwnProperty(o)&&(u[o]=t[o]);if(e&&e.defaultProps)for(o in t=e.defaultProps)void 0===u[o]&&(u[o]=t[o]);return{$$typeof:n,type:e,key:c,ref:l,props:u,_owner:a.current}}t.jsx=u,t.jsxs=u},9268:function(e,t,r){"use strict";e.exports=r(3177)},6008:function(e,t,r){e.exports=r(794)}},function(e){e.O(0,[253,769,744],function(){return e(e.s=7875)}),_N_E=e.O()}]);
