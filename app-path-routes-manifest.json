@@ -1,0 +1,10 @@
+{
+  "/page": "/",
+  "/favicon.ico/route": "/favicon.ico",
+  "/login/page": "/login",
+  "/pass/page": "/pass",
+  "/action/page": "/action",
+  "/kyad_houd/page": "/kyad_houd",
+  "/kyad_houd/login/page": "/kyad_houd/login",
+  "/kyad_houd/action/page": "/kyad_houd/action"
+}
