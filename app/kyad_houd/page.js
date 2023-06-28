@@ -62,9 +62,8 @@ const HomePage = () => {
     <div className={styles.main}>
         <p className={styles.paragraph}>KIDS YOU ARE <br /> 💀 DEAD 💀</p>
         {renderKids()}
-
         <footer>
-        <button onClick={() => router.push('/')}>BACK</button>
+        <button onClick={() => router.push('/')} className={styles.addbutton}>BACK</button>
       </footer>
     </div>
   );

@@ -4,13 +4,28 @@
   justify-content: flex-start;
   align-items: center;
   padding: 2.5rem;
-  background: linear-gradient(45deg, #000aa0, #00ffcc);
+  background: linear-gradient(45deg, #00ffcc, #000aa0);
   z-index: -1;
   min-height: 100vh;
 
 }
 
+.cardkid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 4px;
+  gap: 10px
+}
 
+.cardlist {
+  top: 20%;
+  max-height: calc(100vh - 20%);
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
 
 .paragraph {
   font-size: 33px;
@@ -196,6 +211,15 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+
+
+    .input {
+        appearance: textfield; /* For iOS Safari */
+        -webkit-appearance: textfield; /* For other iOS browsers */
+        -moz-appearance: textfield; /* For Firefox */
+        -ms-appearance: textfield; /* For Internet Explorer */
+        appearance: textfield; /* For other browsers */
+      }
   .content {
     padding: 4rem;
   }

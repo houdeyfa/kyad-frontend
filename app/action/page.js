@@ -125,6 +125,7 @@ const RegisterForm = () => {
           id="level"
           value={level}
           className={styles.input}
+          inputmode="numeric"
           onChange={(e) => setLevel(e.target.value)}
         />
       </div>

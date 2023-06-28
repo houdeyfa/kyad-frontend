@@ -4,11 +4,16 @@
   justify-content: flex-start;
   align-items: center;
   padding: 2.5rem;
-  background: linear-gradient(45deg, #000aa0, #00ffcc);
+  background: linear-gradient(45deg, #006968, #A00A00);
   z-index: -1;
   min-height: 100vh;
-
 }
+
+.label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
 
 .cardkid {
   display: flex;

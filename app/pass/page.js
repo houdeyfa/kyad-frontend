@@ -41,19 +41,18 @@ const PassForm = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleFormSubmit}>
-        <div>
-          <label htmlFor="pass">ASK ANYTHING:</label>
+    <div className={styles.main}>
+      <form onSubmit={handleFormSubmit} className={styles.form}>
+          <label htmlFor="pass" className={styles.typewritertext} >ASK ANYTHING:</label>
           <input
             type="text"
             id="pass"
             value={pass}
+            className={styles.input}
             onChange={(e) => setPass(e.target.value)}
           />
-        </div>
 
-        <button type="submit">ASK</button>
+        <button type="submit" className={styles.button}>ASK</button>
       </form>
     </div>
   );

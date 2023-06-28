@@ -1,13 +1,76 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem;
+  background: linear-gradient(45deg, #A00A00, #006968);
+  z-index: -1;
   min-height: 100vh;
-  background-color: #f1f1f1
 
 }
+
+.cardkid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 4px;
+  gap: 10px
+}
+
+.cardlist {
+  margin-top: 40px;
+  max-height: calc(100vh - 20%);
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+
+}
+
+.paragraph {
+  font-size: 33px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div {
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.input {
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem; /* Adjust this value as needed */
+
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
 
 .inputusername {
   margin: 5px;
@@ -22,14 +85,6 @@
   position: absolute;
 }
 
-.button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  top: 20%;
-  position: absolute;
-    background-color: #f1a1a1
-
-}
 
 .form {
   display: flex;
@@ -157,6 +212,14 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+
+    .input {
+            appearance: textfield; /* For iOS Safari */
+            -webkit-appearance: textfield; /* For other iOS browsers */
+            -moz-appearance: textfield; /* For Firefox */
+            -ms-appearance: textfield; /* For Internet Explorer */
+            appearance: textfield; /* For other browsers */
+          }
   .content {
     padding: 4rem;
   }

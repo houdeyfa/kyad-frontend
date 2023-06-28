@@ -79,7 +79,8 @@ const RegisterForm = () => {
           <div className={styles.cardlist}>
           {acts.map((act) => (
                   <div className={styles.cardkid}>
-                      <h2>{act.description} -- {act.time}</h2>
+                      <h2>{act.description}</h2>
+                      <h2>{act.time}</h2>
                     </div>
               ))}
           </div>
@@ -102,40 +103,45 @@ const RegisterForm = () => {
       }, []);
 
   return (
-  <div>
+  <div className={styles.main}>
 
   <div>
-  <h5>What has {kid} done again?</h5>
+  <p className={styles.paragraph}>What has {kid} done again?</p>
   </div>
-    <form onSubmit={handleFormSubmit}>
+    <form onSubmit={handleFormSubmit} className={styles.form}>
       <div>
-        <label htmlFor="description">Description:</label>
+        <label htmlFor="description" className={styles.label}>Description:</label>
         <input
           type="text"
           id="description"
           value={description}
+          className={styles.input}
           onChange={(e) => setDescription(e.target.value)}
         />
       </div>
       <div>
-        <label htmlFor="level">Level:</label>
+        <label htmlFor="level" className={styles.label}>Level:</label>
         <input
           type="text"
           id="level"
           value={level}
+          className={styles.input}
+                    inputmode="numeric"
+
           onChange={(e) => setLevel(e.target.value)}
         />
       </div>
       <div>
-        <label htmlFor="time">Time:</label>
+        <label htmlFor="time" className={styles.label}>Time:</label>
         <input
           type="text"
           id="time"
           value={time}
+          className={styles.input}
           onChange={(e) => setTime(e.target.value)}
         />
       </div>
-      <button type="submit">Register</button>
+      <button type="submit" className={styles.button}>ADD</button>
     </form>
     <div>
     {listActs()}

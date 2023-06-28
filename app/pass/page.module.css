@@ -1,24 +1,37 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem;
   min-height: 100vh;
-  background-color: #f1f1f1
-
+  background-color: #010101
 }
 
-.inputusername {
+.label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+
+@keyframes typing {
+      0% { width: 0; color: #00ff00; }
+      50% { width: 100%; color: #00ff00; }
+      100% { width: 100%; color: #00ff00; }
+    }
+
+    .typewritertext {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 2s steps(40) infinite;
+    }
+
+
+.input {
   margin: 5px;
   padding: 10px;
   top: 10%;
-  position: absolute;
-}
-.inputpass {
-  margin: 5px;
-  padding: 10px;
-  top: 15%;
   position: absolute;
 }
 

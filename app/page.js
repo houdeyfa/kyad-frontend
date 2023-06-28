@@ -18,7 +18,7 @@ const HomePage = () => {
     //setToken();
 
 
-    if (!token && 1==2) {
+    if (!token) {
       // If the token is not present, the user is not authenticated
       // Redirect to the login page
       router.push('/login');
