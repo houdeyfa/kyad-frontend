@@ -40,17 +40,6 @@
 }
 
 
-.passbutton {
-  background-color: #ffc853;
-  color: #fff;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 26px;
-}
-
 .paragraph {
   font-size: 33px;
   line-height: 1.5;

@@ -10,52 +10,70 @@
 
 }
 
-.cardkid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border-radius: 4px;
-  gap: 10px
-}
 
-.cardlist {
-  top: 20%;
-  max-height: calc(100vh - 20%);
-  align-items: center;
-  flex-direction: column;
-  overflow-y: auto;
-
-}
-
-.addbutton {
-  background-color: #00c853;
-  color: #fff;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 26px;
-}
-
-
-.passbutton {
-  background-color: #ffc853;
-  color: #fff;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 26px;
-}
 
 .paragraph {
   font-size: 33px;
   line-height: 1.5;
   text-align: center;
   margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div {
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.input {
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem; /* Adjust this value as needed */
+
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+
+.inputusername {
+  margin: 5px;
+  padding: 10px;
+  top: 10%;
+  position: absolute;
+}
+.inputpass {
+  margin: 5px;
+  padding: 10px;
+  top: 15%;
+  position: absolute;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .description {

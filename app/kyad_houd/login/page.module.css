@@ -1,61 +1,40 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 2.5rem;
-  background: linear-gradient(45deg, #000aa0, #00ffcc);
-  z-index: -1;
-  min-height: 100vh;
-
-}
-
-.cardkid {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  border-radius: 4px;
-  gap: 10px
-}
-
-.cardlist {
-  top: 20%;
-  max-height: calc(100vh - 20%);
   align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: #f1f1f1
+
+}
+
+.inputusername {
+  margin: 5px;
+  padding: 10px;
+  top: 10%;
+  position: absolute;
+}
+.inputpass {
+  margin: 5px;
+  padding: 10px;
+  top: 15%;
+  position: absolute;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  top: 20%;
+  position: absolute;
+    background-color: #f1a1a1
+
+}
+
+.form {
+  display: flex;
   flex-direction: column;
-  overflow-y: auto;
-
-}
-
-.addbutton {
-  background-color: #00c853;
-  color: #fff;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 26px;
-}
-
-
-.passbutton {
-  background-color: #ffc853;
-  color: #fff;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 26px;
-}
-
-.paragraph {
-  font-size: 33px;
-  line-height: 1.5;
-  text-align: center;
-  margin: 0;
+  align-items: center;
 }
 
 .description {

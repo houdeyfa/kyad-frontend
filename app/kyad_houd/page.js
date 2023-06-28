@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import styles from './page.module.css'
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 
@@ -46,35 +46,27 @@ const HomePage = () => {
   }, []);
 
   function renderKids() {
-
-      return(
-      <div className={styles.cardlist} id='listContainer'>
-          {kids.map((kid) => (
-                  <div className={styles.cardkid}>
-                      <h2>{kid.name}</h2>
-                      <button className={styles.addbutton} onClick={() => router.push(`/action?kid=${kid.id}`)}>+</button>
-                    </div>
-              ))}
-
-      </div>
-          )
+  return(
+  <div className={styles.cardlist}>
+  {kids.map((kid) => (
+          <div className={styles.cardkid}>
+              <h2>{kid.name}</h2>
+              <button className={styles.addbutton} onClick={() => router.push(`/kyad_houd/action?kid=${kid.id}`)}>+</button>
+            </div>
+      ))}
+  </div>
+      )
   }
-
-//  const mainComponent = document.querySelector('.main');
-//  const listContainer = document.getElementById('listContainer');
-//  const listHeight = listContainer.minHeight;
-//  mainComponent.style.minHeight = `${listHeight}px`;
-//
-//  console.log(`${listHeight}px`)
 
   return (
     <div className={styles.main}>
-        <p className={styles.paragraph}>KEEP YOUR ANGER <br /> 😄 DOWN 😄</p>
+        <p className={styles.paragraph}>KIDS YOU ARE <br /> 💀 DEAD 💀</p>
         {renderKids()}
-                   <button className={styles.passbutton} onClick={() => router.push(`/pass`)}>?</button>
 
+        <footer>
+        <button onClick={() => router.push('/')}>BACK</button>
+      </footer>
     </div>
-
   );
 };
 
